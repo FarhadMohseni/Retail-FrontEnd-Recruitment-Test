@@ -1,5 +1,5 @@
 import { UserType } from "../enums/UserType";
-class User {
+export default class User {
   name: string;
   type: UserType;
 
