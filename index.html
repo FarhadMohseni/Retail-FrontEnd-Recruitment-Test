@@ -5,21 +5,8 @@
 </head>
 <body>
     <h3>Please check the console for output.</h3>
-    <script src="src/price-calculator.js"></script>
-    <script>
-        var calculatedPrice = 0;
-        var userType = 1;
-        var productType = 0;
-        var price = 100;
-        var publishedDate = new Date();
 
-        try {
-            calculatedPrice = calculatePrice(userType, productType, price, publishedDate);
-        } catch (ex) {
-            console.log(ex);
-        }
 
-        console.log('Calculated price:', calculatedPrice);
-    </script>
+    <script src="dist/bundle.js"></script>
 </body>
 </html>
