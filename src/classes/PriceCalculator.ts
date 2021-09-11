@@ -5,7 +5,7 @@ import { UserType } from "../enums/UserType";
 export default class PriceCalculator {
   public static calculate(user: User, product: Product) {
     try {
-      var productTypePrice: number = this.caculateProductTypePrice(product);
+      var productTypePrice: number = this.calculateProductTypePrice(product);
       var rebate: number = this.calculateRebate(product, user);
       return product.price + productTypePrice - rebate;
     } catch (error) {
@@ -26,7 +26,7 @@ export default class PriceCalculator {
     return rebate;
   }
 
-  private static caculateProductTypePrice(product: Product): number {
+  private static calculateProductTypePrice(product: Product): number {
     return product.type === ProductType.New ? 25 : 35;
   }
 }
