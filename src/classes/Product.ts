@@ -1,4 +1,5 @@
 import { ProductType } from "../enums/ProductType";
+
 export default class Product {
   name: string;
   type: ProductType;
