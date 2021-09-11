@@ -17,7 +17,11 @@ export default class PriceCalculator {
   private static calculateRebate(product: Product, user: User) {
     var rebate: number = 0;
     var today: string = new Date().toDateString();
-    if (product.publishedDate.toDateString() == today) rebate += 10;
+    if (
+      product.publishedDate.toDateString() == today &&
+      product.type == ProductType.New
+    )
+      rebate += 10;
     if (user.type == UserType.CompanyUser) rebate += 5;
     return rebate;
   }

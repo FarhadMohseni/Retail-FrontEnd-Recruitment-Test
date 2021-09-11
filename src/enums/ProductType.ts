@@ -1,4 +1,4 @@
 export enum ProductType {
-  Old = 0,
-  New = 1,
+  New = 0,
+  Old = 1,
 }

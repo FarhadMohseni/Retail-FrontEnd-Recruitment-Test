@@ -12,4 +12,9 @@
     "resolveJsonModule": true
   },
   "include": ["./src/**/*", "wepack.config.js"],
+  "exclude": [
+    "./tests/",
+    "./node_modules/",
+    "./dist/"
+  ],
 }
