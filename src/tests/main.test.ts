@@ -21,7 +21,7 @@ describe("Price Calculator tests", () => {
     // @ts-ignore
     assert.equal(PriceCalculator.caculateProductTypePrice(product), 25);
   });
-  it("should calculate productTypePrice correctly", () => {
+  it("should calculate the price correctly", () => {
     assert.equal(PriceCalculator.calculate(user, product), 110);
   });
 });
