@@ -3,7 +3,7 @@ import Product from "../classes/Product";
 import { ProductType } from "../enums/ProductType";
 import { UserType } from "../enums/UserType";
 export default class PriceCalculator {
-  public static calculate(user: User, product: Product) {
+  public static calculate(user: User, product: Product): number {
     try {
       var productTypePrice: number = this.calculateProductTypePrice(product);
       var rebate: number = this.calculateRebate(product, user);
@@ -14,7 +14,7 @@ export default class PriceCalculator {
     return 0;
   }
 
-  private static calculateRebate(product: Product, user: User) {
+  private static calculateRebate(product: Product, user: User): number {
     var rebate: number = 0;
     var today: string = new Date().toDateString();
     if (
